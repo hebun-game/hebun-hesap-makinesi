@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebûn Pro Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="brand">HEBÛN PRO</div>
+        <div class="display">
+            <div id="previous-operand"></div>
+            <div id="current-operand">0</div>
+        </div>
+        <button onclick="clearDisplay()" class="span-two">AC</button>
+        <button onclick="deleteNumber()">DEL</button>
+        <button onclick="appendOperator('/')" class="operator">÷</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('*')" class="operator">×</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('+')" class="operator">+</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('-')" class="operator">-</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="compute()" class="span-two equal">=</button>
+    </div>
+
+    <div id="cat-container" onclick="meow()">
+        <img id="pixel-cat" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ6ZndueGZ3bmZ6ZndueGZ3bmZ6ZndueGZ3bmZ6ZndueGZ3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/JpT8c9YVfR8W4/giphy.gif" alt="Pixel Cat">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
